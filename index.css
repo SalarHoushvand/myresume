@@ -409,7 +409,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 100vh;
     background-size: 100%;
     background-position: center;
-    background-attachment: fixed;
+    
     font-size: var(--font-size-normal);
     -webkit-background-size: cover;
 -moz-background-size: cover;
