@@ -515,13 +515,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .client__logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     filter: invert(100%) grayscale(100%) opacity(.8);
+    
 }
 
 .client__logo {
     height: 6.5rem;
     max-width: 18rem;
+    margin-left: 30px;
 }
 
 @media(max-width: 1240px) {
