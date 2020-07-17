@@ -21,6 +21,21 @@
 		  width: 15px;
 		  height: 15px;
 		}
+
+		.link-list-mobile{
+			display: none;
+		}
+
+		@media only screen and (max-width: 600px) {
+	.link-list-mobile{
+  display: inline;}
+  .link-list{
+	  display: none;
+  }
+  .buttons{
+	  text-align: center;
+  }
+}
 		
   </style>
 
@@ -32,7 +47,8 @@
 
 <body style="font-family: 'Roboto', sans-serif;" >
 
-	<div class="container-fluid">
+	<!--navbar-->
+	<div class="container-fluid buttons">
 		<div class="row">
 			<div class="col" style="background-color: rgb(6, 90, 187);">
 				<a href="https://salarhoushvand.github.io/myresume/"><button type="button" class="btn btn-light" style="margin: 10px 5px;"><i class="fa fa-home" aria-hidden="true"></i>
@@ -46,11 +62,17 @@
 		</div>
 
 	</div>
+
+<!--title-->	
 	<br>
 	<br>
 
 	<p class="h1" style="color: rgb(6, 90, 187); text-align: center;">Salar Houshvand</p>
 <div style="color: grey; font-size: 1em; text-align: center;">
+
+	<!--links-->
+
+	<div class="link-list">
 <p> <i style="font-size: 20px;" class="fa fa-mobile"></i> 252-864-4195 &nbsp;&nbsp; <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	<circle cx="8" cy="8" r="8"/>
   </svg> &nbsp;&nbsp; 
@@ -88,6 +110,32 @@
 	</p>
 
 </div>
+
+
+<!--links for mobile-->
+<div class="container link-list-mobile" 
+style="color: gray;
+text-align: center;
+">
+	<div class="row">
+		<div class="col">
+			<ul  style="list-style-type:none; list-style: none;">
+				<li><i style="font-size: 20px;" class="fa fa-mobile"></i> 252-864-4195</li>
+				<li> <i class="fa fa-envelope-o" aria-hidden="true"></i><a style="text-decoration: none; color: gray;" href="mailto:salarhoushvand@gmail.com"> salarhoushvannd@gmail.com</a></li>
+				<li><i class="fa fa-linkedin"></i><a style="text-decoration: none; color: gray;" href="https://www.linkedin.com/in/salar-houshvand/"> salar-houshvand</a></li>
+				<li><i class="fa fa-globe" aria-hidden="true"></i><a style="text-decoration: none; color: gray;" href="https://salarhoushvand.github.io/myresume/"> Personal Website</a></li>
+				<li><i class="fa fa-github"></i><a style="text-decoration: none; color: gray;" href="https://github.com/SalarHoushvand"> SalarHoushvand</a></li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+<!--about-->
 
 <div class="container">
 	<div class="row">
